@@ -33,6 +33,7 @@ class Dog
     else
       self.update
     end
+    self
   end
   def self.create(params)
     dog = Dog.new(name: params["name"], breed: params["breed"] )
